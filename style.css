@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header {
+    background-image: url(images/batiment.png);
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 38px 30px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: left;
+}
+
+
+.nav-links li {
+    list-style: none;
+    display: block; 
+    padding: 6px 8px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    display: block;
+    text-align: left;
+    padding: 8px 8px;
+    text-decoration: none;
+    color: #1f3c88;
+}
+
+.nav-links ul li a:hover {
+    text-decoration: underline;
+    transition: all 0.3s ease;
+    color: #f25e2d;
+}
+
+nav .fa {
+    display: none;
+}
+
+.debut {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    margin-bottom: 15px 18px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.debut:hover {
+    border: 1px solid #4b43e9;
+    background: #4b43e9;
+    transition: 1s;
+}
+
+.intro {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 12px 50px; 
+    background-color: rgba(255, 255, 255, 0.293);
+    padding: 20px;
+    border-radius: 5px;
+    color: rgb(48, 24, 233);
+}
+.intro p {
+  margin: 15px 0;
+}
+
+@media(max-width: 700px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+
+    .nav-links {
+        position: absolute;
+        background: #7db1ff;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        padding: 30px 0;
+    }
+}
+
+.services {
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    background-color: beige;
+}
+
+.categoriee {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px 15px;
+}
+
+.categorie {
+    width: 30%;
+    min-width: 250px;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.categorie img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.categorie p {
+    margin: 0;
+    padding: 0 5px;
+    text-align: left;
+}
+
+/* -----------"Les réformes" ----------- */
+.sensible {
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    background-color: rgb(249, 249, 229);
+}
+
+.sensible h1 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.sensibilise {
+    flex: 1;
+    min-width: 300px;
+}
+.sensibilise h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+
+.sensibilise img {
+    width: 80%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .sensibilise {
+        min-width: 100%;
+    }
+}
+
+/* -----------"TEMOIGNAGES AVIS" ----------- */
+.temoignage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgb(249, 249, 229);
+}
+
+.temoignage h1 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.temoignages, .avis {
+  width: 100%;
+  max-width: 500px;
+  margin: 10px;
+}
+
+.commentaire {
+  background: #f0f0f0;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+button {
+  padding: 8px;
+  background: #1f3c88;
+  color: white;
+  border: none;
+}
+
+

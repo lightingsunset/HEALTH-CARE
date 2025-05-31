@@ -1,0 +1,19 @@
+
+.apropos img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    display: block;
+}
+
+.nous {
+    padding: 20px;
+    background-color: rgb(249, 249, 229);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .apropos {
+        min-width: 100%;
+    }
+}
